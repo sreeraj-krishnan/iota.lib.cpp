@@ -85,7 +85,7 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
       env:
-         - MATRIX_EVAL="sudo add-apt-repository ppa:jonathonf/gcc-7.1 && sudo apt-get update && sudo apt-get install gcc-7 g++-7 && CC=gcc-7 && CXX=g++-7 && CMAKE_BUILD_TYPE=Debug && COVERAGE=1"
+         - MATRIX_EVAL="sudo add-apt-repository -y ppa:jonathonf/gcc-7.1 && sudo apt-get -y update && sudo apt-get install -y gcc-7 g++-7 && CC=gcc-7 && CXX=g++-7 && CMAKE_BUILD_TYPE=Debug && COVERAGE=1"
 
   # allow for fast finish, even if the optional coverage build is not done yet
   fast_finish: true
